@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Compare</title>
+		<link rel="stylesheet" type="text/css" href="./css/MyCV_css.css">
+	</head>
+	<body id="wrapper">
+		<div class="main">
+			<header>
+				
+			</header>
+			<nav>
+				<div class="topnav">
+					<a href="./home.html">HOME</a>
+					<a href="./children.html">CHILDREN</a>
+					<a href="./compare.html" >COMPARE</a>
+					<a href="./history.html">HISTORY</a>
+					<a href="./intro.html">LOG OUT</a>
+				</div>
+			</nav>
+			<div class="row">
+				<div class="column1">
+							<img src="./images/img1.jpg" width="100%">
+				</div>
+				<div class="column2" >
+					<form method="post" action="Compare.php" class="signupbox" >
+						<fieldset>
+							<legend>Details</legend>
+							<table>
+								<tr>
+									<td>
+										<label>Child: </label> 
+									</td>
+									<td>
+										<select name="child_name">
+											<option>(Select)</option>
+											<option>Child 1</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Age:</label> 
+									</td>
+									<td>
+										<input type="number" name="age" min="0" max="19" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Height:</label>
+									</td>
+									<td> 
+										<input type="number" name="height_ft" min="1" max="6" /> ft
+										<input type="number" name="height_in" min="1" max="11" /> in
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Weight:</label>  
+									</td>
+									<td>
+										<input type="number" name="weight" min="5" max="300" /> lbs.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Sex: </label> 
+									</td>
+									<td>
+										<select name="child_name">
+											<option>M</option>
+											<option>F</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+							<br/>
+							<input type="submit" name="compare"/>
+						</fieldset>
+					</form>
+				</div>		
+			</div>
+			<footer>
+				<p>
+					Copyright &copy 2018 My Child's Vaccines
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

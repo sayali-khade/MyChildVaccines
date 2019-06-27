@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+	<meta name="viewport" content="width=device-width initial-scale=1.0""> 
+
+	<head lang="en">
+		<link rel="stylesheet" type="text/css" href="./css/MyCV_css.css">
+		<title>My Child's Vaccines</title>
+	</head>
+
+	<body id="wrapper">
+		<div class="main">
+			<div class="row1">
+				<header></header>
+			</div>
+			<div class="row2">
+				<nav>
+					<div class="topnav">
+					  <a id="nav_id" href="./index.html" style="width:25%">HOME</a>
+						<a id="nav_id" href="./addVaccine.html" style="width:25%">ADD VACCINATION</a>
+						<a id="nav_id" href="./manageVaccines.html" style="width:25%">MANAGE VACCINATION</a>
+						<a id="nav_id" href="./intro.html" style="width:25%">LOGOUT</a>
+					</div>
+				</nav>	
+			</div>
+
+			<div class="row3">
+		  		<div class="column1">
+		  			<form>
+		  				<fieldset class="col1_fieldset">
+		  					<legend>Search Vaccine</legend>
+		  					<table class="search_table" cellpadding="10">
+		  						<tr>
+		  					  		<td><input type="checkbox" name="vaccine_search" value="vname"> Vaccine name</td>
+		  					  		<td><input type="text" name="vaccinename"></td>
+		  					  	</tr>
+		  					  	<tr>
+		  					  		<td><input type="checkbox" name="vaccine_search" value="pharmName">Pharmaceutical Company </td>
+		  					  		<td><input type="text" name="pharmname"></td>
+		  					  	</tr>
+		  					  	<tr>
+		  					   		<td><input type="submit" value="Search"></td>
+		  					   	</tr>
+		  					  </table>
+		  				</fieldset>
+					</form>
+				</div>
+				<div class="column2">
+					<form>
+						<fieldset class="col2_fieldset">
+							<legend>Manage Vaccines</legend>
+								<table class="manage_table" cellpadding="25">
+									<tr>
+										<td>Vaccine Name</td>
+										<td><input type="text" name="vname"/></td>
+									</tr>
+									<tr>
+										<td>Pharmaceutical Company</td>
+										<td><input type="text" name="pharm_name"/></td>
+									</tr>
+									<tr>
+										<td>Lot Number</td>
+										<td><input type="Number" name="lot_num"/></td>
+									</tr>
+									<tr>
+										<td>Dosage</td>
+										<td><input type="Number" name="dosage"/></td>
+									</tr>
+									<tr>
+										<td>SideEffects</td>
+										<td><textarea name="sypmtom" rows="5" cols="25"></textarea></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="submit" name="update" value="Update">
+										<input type="submit" name="delete" value="Delete"></td>
+									</tr>
+								</table>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>Copyright &copy; 2018 My Child's Vaccines</p>
+			</footer>
+		</div>
+	</body>
+</html>

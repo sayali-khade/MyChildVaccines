@@ -1,0 +1,151 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="css/MyCV_css.css">
+			<title>Children: My Child's Vaccine</title>
+		</head>
+		<body id="wrapper">
+			<div class="main">
+				<header>
+				
+				</header>
+				<nav>
+					<div class="topnav">
+						<a href="./home.html">HOME</a>
+						<a href="./children.html">CHILDREN</a>
+						<a href="./compare.html" >COMPARE</a>
+						<a href="./history.html">HISTORY</a>
+						<a href="./intro.html">LOG OUT</a>
+					</div>
+				</nav>
+				<div  class="childinfo">
+					<fieldset>
+						<legend>Children Summary</legend>
+						<table table class="summarytable" border="1" cellpadding="15">
+							<thead>
+								<th>Name</th>
+								<th>Age</th>
+								<th>Height</th>
+								<th>Weight</th>
+							</thead>
+							<tr>
+								<td>Child 1</td>
+								<td>3 months</td>
+								<td>20 inches</td>
+								<td>7 pounds</td>
+							</tr>
+							<tr>
+								<td>Child 2</td>
+								<td>1 year 2 months</td>
+								<td>40 inches</td>
+								<td>30 pounds</td>
+							</tr>
+						</table>
+					</fieldset>
+				</div>
+					
+				<div class= "wrap">
+					
+					<div class="addchild">
+						<form method="post" action="addChild.php">
+							<fieldset>
+								<legend>Add Child</legend>
+								<table class="addchildtable"  align= "center" cellpadding="10px">
+									<tr>
+										<td align="right"><label id="firstname">First name:</label></td>
+										<td align="left"><input type="text" id="firstname"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="lastname">Last name:</label></td>
+										<td align="left"><input type="text" id="lastname"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="height">Height:</label></td>
+										<td align="left"><input type="text" id="height"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="weight">Weight:</label></td>
+										<td align="left"><input type="weight" id="weight"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="gender">Gender:</label></td>
+										<td align="left">
+											<input type="radio" name="gender" value="male" checked> Male
+											<input type="radio" name="gender" value="female"> Female
+											<input type="radio" name="gender" value="other"> Other
+										</td>
+									</tr>
+									<tr>
+										<td><label id=""></label></td>
+										<td><button type="submit"> SignUp </button></td>
+									</tr>
+								</table>
+							</fieldset>
+						</form>
+					</div>					
+					<div class="update">
+						<form method="post" action="addChild.php">
+							<fieldset>
+								<legend>Update/Remove Child</legend>
+								<table class="updateform" align="center" cellpadding="10px">
+									<tr>
+										<td align="right"><label id="child">Child:</label></td>
+										<td align="left"> 
+											<select>
+											  <option value="child1">Child 1</option>
+											  <option value="child2">Child 2</option>
+											</select> 
+										</td>
+									</tr>
+									<tr>
+										<td align="right"><label id="name">Name:</label></td>
+										<td align="left"><input type="text" id="name"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="height">Height:</label></td>
+										<td align="left"><input type="text" id="height"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="weight">Weight:</label></td>
+										<td align="left"><input type="weight" id="weight"></td>
+									</tr>
+									<tr>
+										<td align="right"> Date of Birth:</td>
+										<td><input type="date" name="bday"></td>
+									</tr>
+									<tr>
+										<td align="right"><label id="gender">Gender:</label></td>
+										<td align="left">
+											<input type="radio" name="gender" value="male" checked> Male
+											<input type="radio" name="gender" value="female"> Female
+											<input type="radio" name="gender" value="other"> Other
+										</td>
+									</tr>
+										<td align="right"><label id="Add Vaccination">Vaccine:</label></td>
+										<td align="left"> 
+											<select>
+												<option value="vaccine1">Vaccine 1</option>
+												<option value="vaccine2">Vaccine 2</option>
+												<option value="vaccine3">Vaccine 3</option>
+												<option value="vaccine4">Vaccine 4</option>
+											</select> 
+										</td>
+									<tr>
+										<td><label id=""></label></td>
+										<td>
+											<button type="submit"> Update </button>
+											<button type="submit"> Delete </button>
+										</td>
+									</tr>
+								</table>
+							</fieldset>
+						</form>
+					</div>				
+				</div>
+				<footer>
+					<p>Copyright &copy 2018 My Child's Vaccines</p>
+				</footer>
+			</div>
+		</body>		
+	</html>

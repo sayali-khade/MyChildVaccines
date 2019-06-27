@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+	<meta name="viewport" content="width=device-width initial-scale=1.0""> 
+
+	<head lang="en">
+		<link rel="stylesheet" type="text/css" href="./css/MyCV_css.css">
+		<title>My Child's Vaccines</title>
+	</head>
+
+	<body id="wrapper">
+		<div class="main">
+			<div class="row1">
+				<header></header>
+			</div>
+			<div class="row2">
+				<nav>
+					<div id="nav1" class="topnav">
+						<a id="nav_id" href="./index.html" style="width:25%">HOME</a>
+					<a id="nav_id" href="./addVaccine.html" style="width:25%">ADD VACCINATION</a>
+					<a id="nav_id" href="./manageVaccines.html" style="width:25%">MANAGE VACCINATION</a>
+					<a id="nav_id" href="./intro.html" style="width:25%">LOGOUT</a>
+					</div>
+				</nav>	
+			</div>
+			<div class="row3">
+				<div class="column1">
+
+					<image id="vaccine_image" src="./images/vaccine.jpg" height="250px" width="350px"/>
+					<image id="add_image" src="./images/add.png" height="250px" width="350px"/>
+				</div>
+				<div class="column2">
+					<form>
+						<table class="addVaccine_table" cellpadding="25">
+							<tr>
+								<td>Vaccine Name</td>
+								<td><input type="text" name="vname"/></td>
+							</tr>
+							<tr>
+								<td>Pharmaceutical Company</td>
+								<td><input type="text" name="pharm_name"/></td>
+							</tr>
+							<tr>
+								<td>Lot Number</td>
+								<td><input type="Number" name="lot_num"/></td>
+							</tr>
+							<tr>
+								<td>Dosage</td>
+								<td><input type="Number" name="dosage"/></td>
+							</tr>
+							<tr>
+								<td>SideEffects</td>
+								<td><textarea name="sypmtom" rows="5" cols="25"></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="submit" name="submit" value="Add Vaccine"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>Copyright &copy; 2018 My Child's Vaccines</p>
+			</footer>
+		</div>
+	</body>
+</html>
